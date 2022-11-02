@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import axios from "axios";
 
 function useFetch(url) {
@@ -19,26 +19,27 @@ function useFetch(url) {
         setLoading(false)
       })
 
-    //   fetch('http://example.com/movies.json')
+    //   fetch(url)
     // .then((response) => response.json())
     // .then((data) => console.log(data));
+    // setLoading(false)
   }, [url]);
 
-  const refetch = () => {
-    setLoading(true);
-    axios
-      .get(url)
-      .then((response) => {
-        setData(response.data);
-      })
-      .catch((err) => {
-        setError(err);
-      }). finally(() => {
-        setLoading(false)
-      })
-  }
+  // const refetch = () => {
+  //   setLoading(true);
+  //   axios
+  //     .get(url)
+  //     .then((response) => {
+  //       setData(response.data);
+  //     })
+  //     .catch((err) => {
+  //       setError(err);
+  //     }). finally(() => {
+  //       setLoading(false)
+  //     })
+  // }
 
-  return {data, loading, error, refetch}                 
+  return {data, loading, error}                 
 
 }
 

@@ -7,17 +7,7 @@ function useFetch(url) {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    setLoading(true);
-    axios
-      .get(url)
-      .then((response) => {
-        setData(response.data);
-      })
-      .catch((err) => {
-        setError(err);
-      }). finally(() => {
-        setLoading(false)
-      })
+    getData()
 
     //   fetch(url)
     // .then((response) => response.json())
@@ -38,6 +28,20 @@ function useFetch(url) {
   //       setLoading(false)
   //     })
   // }
+
+  const getData = async () => {
+    setLoading(true);
+    await axios
+      .get(url)
+      .then((response) => {
+        setData(response.data);
+      })
+      .catch((err) => {
+        setError(err);
+      }). finally(() => {
+        setLoading(false)
+      })
+  }
 
   return {data, loading, error}                 
 

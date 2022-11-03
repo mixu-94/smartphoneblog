@@ -1,6 +1,7 @@
 import React from 'react'
 import './Ranking.css'
 import useFetch from '../../constants/useFetch'
+import { convertLength } from '@mui/material/styles/cssUtils'
 
 const Ranking = () => {
 
@@ -9,13 +10,17 @@ const Ranking = () => {
     
     // const TEST_URL = "https://v2.jokeapi.dev/joke/Any"
 
-    const {data, loading, error } = useFetch(URL_SMARTPHONES)
+  //    const {data, loading, error } =  useFetch(URL_SMARTPHONES)
 
-    console.log(data.items)
-    const fields = data.items
-    console.log(fields)
+  //   if (data) {
+  //   const fields = data.items
+    
+  //   fields.map((item) => {
+  //     console.log("aus map" ,item.fields.title)
+  //   })
+  // }
 
-    if (loading) return <h1> LOADING ....</h1>
+  //   if (loading) return <h1> LOADING ....</h1>
   return (
     <div>Ranking
     

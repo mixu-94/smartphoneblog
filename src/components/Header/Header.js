@@ -4,7 +4,7 @@ import useFetch from "../../constants/useFetch";
 
 const Header = () => {
   const API_URL_HEADER =
-    "https://cdn.contentful.com/spaces/xwxqqpx0he6y/entries/?access_token=2ez5kqa9TZOM-3B_THRj0kQkOUwTyCCf24WldszChbc&select=fields.headertitle,fields.headerlogo&content_type=header";
+    "https://cdn.contentful.com/spaces/xwxqqpx0he6y/entries/?select=fields.headertitle,fields.headerlogo&content_type=header";
 
   const { data, loading, error } = useFetch(API_URL_HEADER);
 

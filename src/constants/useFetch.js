@@ -10,6 +10,7 @@ function useFetch(url){
   const [error, setError] = useState(null);
   
 
+
   useEffect(() => {
     getData()
   }, [url]);
@@ -31,7 +32,7 @@ function useFetch(url){
   const getData = async () => {
     setLoading(true);
     await axios
-      .get(url)
+      .get(`${url}&access_token=${process.env.REACT_APP_CONTENTFUL_ACCESS_TOKEN}`)
       .then((response) => {
         setData(response.data);
       })

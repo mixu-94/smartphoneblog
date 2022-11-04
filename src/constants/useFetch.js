@@ -10,90 +10,27 @@ function useFetch(url){
   const [error, setError] = useState(null);
   
 
-  useEffect( () => {
-
-  if(!url) return;
-
-
-  const fetchData = async () => {
-
-  setLoading(true);
-
-  const response = await fetch(url);
-  const data = await response.json();
-
-  setData(data);
-  setLoading(false);
-
-};
-
-  fetchData();  
-
-  
-   /*   axios
-      .get(url)
-      .then((response) => {
-        setLoading(true);
-        setData(response.data);
-        setError(null);
-      })
-      .catch((err) => {
-        setError(err.message);
-        setData(null);
-      }). finally(() => {
-        setLoading(false)
-      })   */
-
-    //   fetch('http://example.com/movies.json')
-    // .then((response) => response.json())
-    // .then((data) => console.log(data));
-  
-
-
+  useEffect(() => {
+    getData()
   }, [url]);
 
-  return {data, loading, error}                 
-}
+  // const refetch = () => {
+  //   setLoading(true);
+  //   axios
+  //     .get(url)
+  //     .then((response) => {
+  //       setData(response.data);
+  //     })
+  //     .catch((err) => {
+  //       setError(err);
+  //     }). finally(() => {
+  //       setLoading(false)
+  //     })
+  // }
 
-
-export default useFetch;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*    axios
-      .get(url)
-      .then((response) => {
-        setData(response.data);
-        setError(null);
-      })
-      .catch((err) => {
-        setError(err.message);
-        setData(null);
-      }). finally(() => {
-        setLoading(false)
-      })  */
-
-    //   fetch('http://example.com/movies.json')
-    // .then((response) => response.json())
-    // .then((data) => console.log(data));
-  
-
-
-  /* const refetch = () => {
+  const getData = async () => {
     setLoading(true);
-    axios
+    await axios
       .get(url)
       .then((response) => {
         setData(response.data);
@@ -103,4 +40,11 @@ export default useFetch;
       }). finally(() => {
         setLoading(false)
       })
-  } */
+  }
+
+  return {data, loading, error}                 
+
+}
+
+
+export default useFetch;

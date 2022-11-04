@@ -8,11 +8,6 @@ function useFetch(url) {
 
   useEffect(() => {
     getData()
-
-    //   fetch(url)
-    // .then((response) => response.json())
-    // .then((data) => console.log(data));
-    // setLoading(false)
   }, [url]);
 
   // const refetch = () => {

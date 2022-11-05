@@ -33,6 +33,7 @@ if(data){
   const display2 = fields[0].fields.articleDescription.content[4].content[0].value
 
   const camera = fields[0].fields.articleDescription.content[6].content[0].value
+  const software = fields[0].fields.articleDescription.content[8].content[0].value
 
 
   console.log(data.items[0].fields.articleDescription.content[0].content[0].value)
@@ -54,7 +55,9 @@ if(data){
           <p   key={item.fields.articleDescription.content[1].content[0].value}> {item.fields.articleDescription.content[1].content[0].value}</p>
 
           <ul style={{display:"flex" ,flexDirection:"column", textAlign:"center", listStyle:"none", marginLeft:"-50px"}}>
+
           <h2 key ={display.index}>{display}</h2>
+
             <li>{fields[0].fields.articleDescription.content[3].content[0].content[0].content[0].value}:  <br></br>{fields[0].fields.articleDescription.content[3].content[0].content[1].content[0].value}</li><br></br>
             <li>{fields[0].fields.articleDescription.content[3].content[1].content[0].content[0].value}:  <br></br>{fields[0].fields.articleDescription.content[3].content[1].content[1].content[0].value}</li><br></br>
             <li>{fields[0].fields.articleDescription.content[3].content[2].content[0].content[0].value}:  <br></br>{fields[0].fields.articleDescription.content[3].content[2].content[1].content[0].value}</li><br></br>
@@ -65,12 +68,16 @@ if(data){
             <li>{fields[0].fields.articleDescription.content[3].content[7].content[0].content[0].value}:  <br></br>{fields[0].fields.articleDescription.content[3].content[7].content[1].content[0].value}</li><br></br>
             <li>{fields[0].fields.articleDescription.content[3].content[8].content[0].content[0].value}:  <br></br>{fields[0].fields.articleDescription.content[3].content[8].content[1].content[0].value}</li><br></br>
             <li>{fields[0].fields.articleDescription.content[3].content[9].content[0].content[0].value}:  <br></br>{fields[0].fields.articleDescription.content[3].content[9].content[1].content[0].value}</li><br></br>
+
             <h3 key ={display2}>{display2}</h3>
+
             <li>{fields[0].fields.articleDescription.content[5].content[0].content[0].content[0].value}:  <br></br>{fields[0].fields.articleDescription.content[5].content[0].content[1].content[0].value}</li><br></br>
             <li>{fields[0].fields.articleDescription.content[5].content[1].content[0].content[0].value}:  <br></br>{fields[0].fields.articleDescription.content[5].content[1].content[1].content[0].value}</li><br></br>
             <li>{fields[0].fields.articleDescription.content[5].content[2].content[0].content[0].value}:  <br></br>{fields[0].fields.articleDescription.content[5].content[2].content[1].content[0].value}</li><br></br>
             <li>{fields[0].fields.articleDescription.content[5].content[3].content[0].content[0].value}:  <br></br>{fields[0].fields.articleDescription.content[5].content[3].content[1].content[0].value}</li><br></br>
+
           <h2 key={camera.index}>{camera}</h2>
+          
             <li>{fields[0].fields.articleDescription.content[7].content[0].content[0].content[0].value}:  <br></br>{fields[0].fields.articleDescription.content[7].content[0].content[1].content[0].value}</li><br></br>
             <li>{fields[0].fields.articleDescription.content[7].content[1].content[0].content[0].value}:  <br></br>{fields[0].fields.articleDescription.content[7].content[1].content[1].content[0].value}</li><br></br>
             <li>{fields[0].fields.articleDescription.content[7].content[2].content[0].content[0].value}:  <br></br>{fields[0].fields.articleDescription.content[7].content[2].content[1].content[0].value}</li><br></br>
@@ -80,10 +87,16 @@ if(data){
             <li>{fields[0].fields.articleDescription.content[7].content[6].content[0].content[0].value}:  <br></br>{fields[0].fields.articleDescription.content[7].content[6].content[1].content[0].value}</li><br></br>
             <li>{fields[0].fields.articleDescription.content[7].content[7].content[0].content[0].value}:  <br></br>{fields[0].fields.articleDescription.content[7].content[7].content[1].content[0].value}</li><br></br>
             <li>{fields[0].fields.articleDescription.content[7].content[8].content[0].content[0].value}:  <br></br>{fields[0].fields.articleDescription.content[7].content[8].content[1].content[0].value}</li><br></br>
-            <li>{fields[0].fields.articleDescription.content[7].content[0].content[0].content[0].value}:  <br></br>{fields[0].fields.articleDescription.content[7].content[9].content[1].content[0].value}</li><br></br>
-            <li>{fields[0].fields.articleDescription.content[7].content[0].content[0].content[0].value}:  <br></br>{fields[0].fields.articleDescription.content[7].content[10].content[1].content[0].value}</li><br></br>
-            <li>{fields[0].fields.articleDescription.content[7].content[0].content[0].content[0].value}:  <br></br>{fields[0].fields.articleDescription.content[7].content[11].content[1].content[0].value}</li><br></br>
-            <li>{fields[0].fields.articleDescription.content[7].content[0].content[0].content[0].value}:  <br></br>{fields[0].fields.articleDescription.content[7].content[12].content[1].content[0].value}</li><br></br>
+            <li>{fields[0].fields.articleDescription.content[7].content[9].content[0].content[0].value}:  <br></br>{fields[0].fields.articleDescription.content[7].content[9].content[1].content[0].value}</li><br></br>
+            <li>{fields[0].fields.articleDescription.content[7].content[10].content[0].content[0].value}:  <br></br>{fields[0].fields.articleDescription.content[7].content[10].content[1].content[0].value}</li><br></br>
+
+            <h2 key={software.index}>{software}</h2>
+
+            <li>{fields[0].fields.articleDescription.content[7].content[10].content[0].content[0].value}:  <br></br>{fields[0].fields.articleDescription.content[7].content[10].content[1].content[0].value}</li><br></br>
+
+
+
+
           </ul>
 
 

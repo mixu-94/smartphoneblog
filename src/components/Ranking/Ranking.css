@@ -1,5 +1,7 @@
 ul{
     display: flex;
+    flex-direction: column;
+
 }
 #inhalt {
     margin:auto;
@@ -28,7 +30,14 @@ ul{
     max-width:92%;
     margin:auto;
     letter-spacing: 1px;
+}
 
+li{
+    font-size: large;
+    letter-spacing: 0.8px;
+    list-style-type:square;
+    text-align: start;
+    padding:1px;
 }
 
 

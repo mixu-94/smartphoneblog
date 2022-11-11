@@ -3,10 +3,10 @@
 // import useFetch from "../../constants/useFetch";
 
 // const Header = () => {
-//   const API_URL_HEADER =
-//     "https://cdn.contentful.com/spaces/xwxqqpx0he6y/entries/?select=fields.headertitle,fields.headerlogo&content_type=header";
+  // const API_URL_HEADER =
+  //   "https://cdn.contentful.com/spaces/xwxqqpx0he6y/entries/?select=fields.headertitle,fields.headerlogo&content_type=header";
 
-//   const { data, loading, error } = useFetch(API_URL_HEADER);
+  // const { data, loading, error } = useFetch(API_URL_HEADER);
 
 //   let logo = null;
 //   let title = null;

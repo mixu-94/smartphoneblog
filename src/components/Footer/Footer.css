@@ -1,0 +1,26 @@
+.footer{
+    background-color: rgb(20, 54, 54);
+    flex-direction: column;
+}
+
+.footerimg{
+    height: 250px;
+    width: auto;
+}
+
+.footerthings{
+    color: rgb(0, 0, 0);
+    font-size: 0.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Mukta', sans-serif;
+    flex-direction: column;
+    
+}
+
+.footertitle{
+    font-size: 1.4rem;
+    margin: auto auto 1% auto;
+}
+

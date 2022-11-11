@@ -1,4 +1,4 @@
-ul{
+#inhalt ul{
     display: flex;
     flex-direction: column;
     padding:0px;
@@ -16,8 +16,8 @@ ul{
     margin:auto;
 }
 #inhalt img{
-    height:30vh;
-    width:80vw;
+    height:25vh;
+    width:35vw;
     border-radius: 5%;
     margin:auto;
 }
@@ -31,7 +31,7 @@ ul{
     line-height: 20px;
 }
 
-ul li{
+#inhalt ul li{
     font-size: large;
     letter-spacing: 0.8px;
     list-style-type:none;
@@ -81,7 +81,7 @@ ul li{
     padding:10px;
     border-radius: 5%;;
 }
-a{
+#inhalt a{
     text-decoration: none;
     font-size: larger;
     color:darkcyan

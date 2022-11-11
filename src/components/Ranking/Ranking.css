@@ -1,7 +1,7 @@
 ul{
     display: flex;
     flex-direction: column;
-
+    padding:0px;
 }
 #inhalt {
     margin:auto;
@@ -14,8 +14,6 @@ ul{
     min-width: 360px;
     max-width:90%;
     margin:auto;
-
-
 }
 #inhalt img{
     height:30vh;
@@ -26,18 +24,51 @@ ul{
 }
 
 #inhalt p{
-    text-align: center justify;
+    text-align:  justify;
     max-width:92%;
     margin:auto;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
+    padding:5px;
+    line-height: 20px;
 }
 
-li{
+ul li{
     font-size: large;
     letter-spacing: 0.8px;
-    list-style-type:square;
-    text-align: start;
+    list-style-type:none;
     padding:1px;
+    list-style:circle;
+
+}
+
+#display-keys p{
+    text-align: end;
+}
+#display-keys li{
+    margin-bottom:25px;
+    max-width: 100x;
+    margin-left:10px;
+}
+#display-values li{
+    margin-bottom:15px;
+}
+#display-values li{
+    text-align: end;
+    list-style-type: none;
+    margin-right:5px;
+}
+#camera-values li{
+    list-style-type:none;
+    margin-right:10px;
+    line-height: 53px;
+    text-align: end;
+
+}
+#camera-keys li{
+    margin-bottom:10px;
+    max-width: 100x;
+    margin-left:10px;
+    margin-top: 20px;
 }
 
 

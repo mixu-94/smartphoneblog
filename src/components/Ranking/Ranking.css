@@ -44,31 +44,43 @@ ul li{
 #display-keys p{
     text-align: end;
 }
-#display-keys li{
-    margin-bottom:25px;
-    max-width: 100x;
-    margin-left:10px;
-}
-#display-values li{
-    margin-bottom:15px;
-}
-#display-values li{
-    text-align: end;
-    list-style-type: none;
-    margin-right:5px;
-}
-#camera-values li{
+
+#camera-values, 
+#hardware-values li,
+#camera-values li,
+#display-values li
+ { 
     list-style-type:none;
     margin-right:10px;
-    line-height: 53px;
-    text-align: end;
+    text-align: start;
+    line-height:3;
+    max-width:90vw;
 
+
+}
+#hardware-values li{
+    overflow-y: hidden;
 }
 #camera-keys li{
     margin-bottom:10px;
-    max-width: 100x;
     margin-left:10px;
     margin-top: 20px;
+}
+
+.keys{
+    display:none;
+}
+
+#detailsBtn i:hover{
+    cursor: pointer;
+}
+
+#search{
+    width:60%;
+    height:1.1rem;
+    font-size: 25px;
+    padding:10px;
+    border-radius: 5%;;
 }
 
 

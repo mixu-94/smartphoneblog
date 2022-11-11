@@ -1,0 +1,106 @@
+ul{
+    display: flex;
+    flex-direction: column;
+    padding:0px;
+}
+#inhalt {
+    margin:auto;
+    display:"flex";
+    flex-direction: column-reverse;
+    text-align:"center";
+    list-style-type: none;
+    color:black;
+    z-index: 10;
+    min-width: 360px;
+    max-width:90%;
+    margin:auto;
+}
+#inhalt img{
+    height:30vh;
+    width:80vw;
+    border-radius: 5%;
+    margin:auto;
+}
+
+#inhalt p{
+    text-align:  justify;
+    max-width:92%;
+    margin:auto;
+    letter-spacing: 2px;
+    padding:5px;
+    line-height: 20px;
+}
+
+ul li{
+    font-size: large;
+    letter-spacing: 0.8px;
+    list-style-type:none;
+    padding:1px;
+    list-style:circle;
+
+}
+
+#display-keys p{
+    text-align: end;
+}
+
+#camera-values, 
+#hardware-values li,
+#camera-values li,
+#display-values li
+ { 
+    list-style-type:none;
+    margin-right:10px;
+    text-align: start;
+    line-height:3;
+    max-width:90vw;
+
+
+}
+#hardware-values li{
+    overflow-y: hidden;
+}
+#camera-keys li{
+    margin-bottom:10px;
+    margin-left:10px;
+    margin-top: 20px;
+}
+
+.keys{
+    display:none;
+}
+
+#detailsBtn i:hover{
+    cursor: pointer;
+}
+
+#search{
+    width:60%;
+    height:1.1rem;
+    font-size: 25px;
+    padding:10px;
+    border-radius: 5%;;
+}
+a{
+    text-decoration: none;
+    font-size: larger;
+    color:darkcyan
+}
+a:hover{
+    color:cyan
+}
+
+@media screen and (min-width:800px){
+
+    #inhalt img{
+        height:30vh;
+        width:20vw;
+        border-radius: 5%;
+        margin:auto;
+    }
+    #inhalt {
+        max-width: 50vw;
+    }
+}
+
+

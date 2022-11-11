@@ -3,7 +3,6 @@ import './Ranking.css'
 import useFetch from '../../constants/useFetch'
 import Details from '../Details'
 
-
 const Ranking = () => {
 const {data,loading,error} = useFetch("https://cdn.contentful.com/spaces/xwxqqpx0he6y/entries/?access_token=2ez5kqa9TZOM-3B_THRj0kQkOUwTyCCf24WldszChbc&select=fields&content_type=article")
 
@@ -24,7 +23,6 @@ console.log(data)
 
 const items = data.items
 const includes = data.includes;
-
 
 const displayValues = items.map((info, index) => {
   return info.fields.articleDescription.content[3].content.map((values, index) =>{

@@ -1,7 +1,6 @@
 import React, {useState} from 'react'
 import './Ranking.css'
 import useFetch from '../../constants/useFetch'
-import Button from '../assets/Button'
 import Details from '../Details'
 
 
@@ -47,27 +46,22 @@ return (
   <div>
     <input placeholder='Suche' id="search"></input>
       {items.map((index, item) => 
-
       <div id="inhalt" key={index}>
         <h1>{items[item].fields.title}</h1>
         <img src={includes.Asset[item].fields.file.url}></img>
         <h2>{items[0].fields.articleDescription.content[0].content[0].value}</h2>
         <p>{items[item].fields.articleDescription.content[1].content[0].value}</p>
-
-
-        <a target="_blank" href={items[0].fields.linkToWebsite}>Link</a>
-        <h4>Ranking:{items[item].fields.pricePerformance}/5</h4>
         <br></br>
+        <a target="_blank" href={items[0].fields.linkToWebsite}>Checkout the Official Website</a>
         <h2>{items[0].fields.articleDescription.content[8].content[0].value}</h2>
         <h3>{items[item].fields.articleDescription.content[9].content[0].content[0].content[0].value}</h3>
         <h2>{items[item].fields.conclusion.content[0].content[0].value}</h2>
         <p>{items[item].fields.conclusion.content[1].content[0].value}</p>
-       <div id="detailsBtn" onClick={handleClick}><i title="Show/Hide Details" style={{fontSize:"25px"}} className="fa fa-angle-down"></i></div>
-
-      {showDetails &&(
-        
+        <br></br>
+        <h1>Our Ranking:{items[item].fields.pricePerformance}/5</h1>
+        <div id="detailsBtn" onClick={handleClick}><i title="Show/Hide Details" style={{fontSize:"25px"}} className="fa fa-angle-down"></i></div>
+        {showDetails &&(        
         <div id="details">
-
         <Details />
         <h2>{items[0].fields.articleDescription.content[2].content[0].value}</h2>
         <div style={{display:"flex", textAlign:"start", justifyContent:"space-evenly"}}>
@@ -88,16 +82,12 @@ return (
             <li>{hardwareValues}</li>
           </ul>
         </div>
-
-
-
         <br></br>
-        </div>
-
-        )}
       </div>
+        )}
+      </div>        
      )}
-  </div>
+</div>
 )
 }
 }

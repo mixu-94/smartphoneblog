@@ -20,7 +20,6 @@ ul{
     width:80vw;
     border-radius: 5%;
     margin:auto;
-
 }
 
 #inhalt p{
@@ -81,6 +80,27 @@ ul li{
     font-size: 25px;
     padding:10px;
     border-radius: 5%;;
+}
+a{
+    text-decoration: none;
+    font-size: larger;
+    color:darkcyan
+}
+a:hover{
+    color:cyan
+}
+
+@media screen and (min-width:800px){
+
+    #inhalt img{
+        height:30vh;
+        width:20vw;
+        border-radius: 5%;
+        margin:auto;
+    }
+    #inhalt {
+        max-width: 50vw;
+    }
 }
 
 
